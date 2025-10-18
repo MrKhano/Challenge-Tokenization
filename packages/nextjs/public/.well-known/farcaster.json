@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "allowedAddresses": [""]
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Challenge Tokenization",
+    "homeUrl": "https://buffalo-teal.vercel.app",
+    "iconUrl": "https://example.com/icon.png",
+    "splashImageUrl": "https://example.com/splash.png",
+    "splashBackgroundColor": "#ffffff",
+    "webhookUrl": "",
+    "subtitle": "Scaffold-ETH 2 Mini App",
+    "description": "Extension pour le challenge Tokenization",
+    "screenshotUrls": [],
+    "primaryCategory": "education",
+    "tags": ["scaffold-eth", "tokenization", "miniapp"],
+    "heroImageUrl": "",
+    "tagline": "Apprenez à tokeniser !",
+    "ogTitle": "Challenge Tokenization Mini App",
+    "ogDescription": "Apprenez à déployer des NFTs et Mini Apps",
+    "ogImageUrl": "",
+    "noindex": true
+  }
+}
