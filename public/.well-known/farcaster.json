@@ -1,0 +1,32 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "allowedAddresses": ["0x...TON_BASE_ACCOUNT..."]
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Mon Super App",
+    "homeUrl": "https://mon-app.vercel.app",
+    "iconUrl": "https://mon-app.vercel.app/icons/icon.png",
+    "splashImageUrl": "https://mon-app.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://mon-app.vercel.app/api/webhook",
+    "subtitle": "Rapide, fun",
+    "description": "Description courte",
+    "screenshotUrls": [
+      "https://mon-app.vercel.app/s1.png"
+    ],
+    "primaryCategory": "social",
+    "tags": ["ex", "miniapp"],
+    "heroImageUrl": "https://mon-app.vercel.app/og.png",
+    "tagline": "Lancer instantanément",
+    "ogTitle": "Mon Super App",
+    "ogDescription": "Desc OG",
+    "ogImageUrl": "https://mon-app.vercel.app/og.png",
+    "noindex": true
+  }
+}
