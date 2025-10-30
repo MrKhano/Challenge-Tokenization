@@ -1,0 +1,102 @@
+🏗 Scaffold-ETH 2 – Guide condensé
+1️⃣ Prérequis
+
+Node ≥ v20.18.3
+
+Yarn (v1 ou v2+)
+
+Git
+
+2️⃣ Lancer l’environnement local
+
+Lance la blockchain locale :
+
+yarn chain
+
+
+Déploie ton contrat local :
+
+yarn deploy
+
+
+Démarre le frontend :
+
+yarn start
+
+
+Ouvre http://localhost:3000
+.
+
+3️⃣ Wallets & Gas
+
+Burner wallets : wallets jetables pour dev local (fenêtre incognito).
+
+Faucet : prends des ETH test pour payer le gas.
+
+MetaMask : ne pas connecter au début.
+
+4️⃣ Minting NFTs
+
+Onglet My NFTs → MINT NFT pour créer un ERC-721 unique (Buffalo, Zebra, Rhino).
+
+Vérifie le propriétaire d’un token : ownerOf(tokenId)
+
+Transfert : seulement le propriétaire ou un opérateur approuvé peut transférer.
+
+Comptage : balanceOf(address) indique combien de NFTs possède une adresse.
+
+5️⃣ Déployer sur testnet (Sepolia)
+
+Change defaultNetwork = sepolia dans hardhat.config.ts
+
+Crée une adresse deployer :
+
+yarn generate
+
+
+Alimente-la en ETH test depuis un faucet.
+
+Déploie le contrat :
+
+yarn deploy --network sepolia
+
+6️⃣ Déployer le frontend
+
+Configure targetNetwork = chains.sepolia dans scaffold.config.ts
+
+Connecte ton wallet ou active les burner wallets (onlyLocalBurnerWallet: false)
+
+Déploie sur Vercel :
+
+yarn vercel
+
+
+Tests automatiques :
+
+yarn test
+
+7️⃣ Vérification du contrat
+yarn verify --network sepolia
+
+
+Permet aux autres de consulter ton contrat sur Etherscan.
+
+8️⃣ Side quests & bonus
+
+Vérifie tes NFTs dans MetaMask (Sepolia).
+
+Ajoute manuellement si besoin : Import NFT → contrat, tokenID, réseau.
+
+Partage tes NFTs avec un ami pour tester les transferts.
+
+9️⃣ Concepts clés à retenir
+
+NFT = token unique, non-fongible (ERC-721).
+
+Ownership onchain = ownerOf(tokenId)
+
+Transferts = atomiques et instantanés
+
+Approvals = approve (1 NFT) ou setApprovalForAll (tout l’owner)
+
+Composabilité = utiliser des NFTs dans d’autres smart contracts pour créer des projets complexes
